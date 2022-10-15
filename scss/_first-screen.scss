@@ -12,6 +12,10 @@
 
 .first-screen__header {
     width: 100%;
+}
+
+.header__body {
+    @include bodyWidth();
     display: flex;
     justify-content: space-between;
 }
