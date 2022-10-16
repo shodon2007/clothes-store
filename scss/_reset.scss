@@ -4,6 +4,11 @@
     background-color: white;
 }
 
+/* Убираем ненужный фон при клике  */
+* {
+    -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+}
+
 /* шрифт */
 body {
     font-family: gilroy;

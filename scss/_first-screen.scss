@@ -2,6 +2,7 @@
     text-transform: uppercase;
     background-image: url(../img/background.png);
     background-size: cover;
+    background-position: center center;
     width: 100vw;
     height: 100vh;
     display: flex;
@@ -19,6 +20,7 @@
 //------------------------------------------
 
 .first-screen__title {
+    text-align: center;
     color: white;
     letter-spacing: 36px;
     font-size: 60px;
@@ -38,4 +40,52 @@
 .first-screen__button img {
     max-width: 50%;
     margin: 0 auto;
+    transition: all 0.5s ease;
+    cursor: pointer;
 }
+
+.first-screen__button img:hover {
+    transform: scale(1.2);
+    filter: blur(2px);
+}
+
+//------------------------------------------
+
+@media (max-width: 724px) {
+    .first-screen__title {
+        letter-spacing: 16px;
+        font-size: 40px;
+    }
+
+    .first-screen__subtitle {
+        font-size: 24px;
+    }
+}
+
+//------------------------------------------
+
+@media (max-width:425px) {
+    .first-screen__title {
+        letter-spacing: 10px;
+        font-size: 30px;
+    }
+
+    .first-screen__subtitle {
+        font-size: 20px;
+    }
+}
+
+//------------------------------------------
+
+@media (max-width: 320px) {
+    .first-screen__title {
+        font-size: 24px;
+        letter-spacing: 7px;
+    }
+
+    .first-screen__subtitle {
+        font-size: 18px;
+    }
+}
+
+//------------------------------------------

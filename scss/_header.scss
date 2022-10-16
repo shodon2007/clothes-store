@@ -1,3 +1,5 @@
+//------------------------------------------
+
 .first-screen__header {
     width: 100%;
     margin: 20px;
@@ -12,11 +14,29 @@
 
 //------------------------------------------
 
+.header__burger {
+    display: none;
+}
+
+//------------------------------------------
+
+.header__burger img {
+    height: 60px;
+    width: 100%;
+}
+
+//------------------------------------------
+
 .header__nav a {
     display: inline-block;
     font-size: 18px;
     text-decoration: none;
     color: white;
+    transition: all 0.3s ease;
+}
+
+.header__nav a:hover {
+    color: #f84545;
 }
 
 //------------------------------------------
@@ -31,5 +51,43 @@
 //------------------------------------------
 
 .header__logo img {
-    max-width: 70%;
+    height: 60px;
+    transition: all 0.3s ease;
+}
+
+.header__logo img:hover {
+    filter: drop-shadow(10px 10px 10px #f84545);
+    transform: scale(1.05);
+}
+
+//------------------------------------------
+
+@media (max-width: 1200px) {
+    .header__body {
+        @include mobileWidth();
+    }
+}
+
+//------------------------------------------
+
+@media (max-width: 724px) {
+    .header__nav {
+        display: none;
+    }
+
+    .header__burger {
+        display: block;
+    }
+}
+
+//------------------------------------------
+
+@media (max-width: 320px) {
+    .header__burger img {
+        height: 40px;
+    }
+
+    .header__logo img {
+        height: 40px;
+    }
 }
