@@ -1,3 +1,8 @@
+@font-face {
+    font-family: "Proxima-nova";
+    src: url(../fonts/proximaNova.otf);
+}
+
 .first-screen {
     text-transform: uppercase;
     background-image: url(../img/background.png);
@@ -15,8 +20,51 @@
     margin: 20px;
 }
 
+.header__nav {
+    display: flex;
+    gap: 20px;
+}
+
+.header__nav a {
+    font-family: Proxima-nova;
+    display: inline-block;
+    font-size: 18px;
+    text-decoration: none;
+    color: white;
+}
+
 .header__body {
     @include bodyWidth();
     display: flex;
     justify-content: space-between;
+    align-items: center;
+}
+
+
+.header__logo img {
+    max-width: 70%;
+}
+
+.first-screen__main {
+    text-align: center;
+}
+
+.first-screen__title {
+    color: white;
+    letter-spacing: 36px;
+    font-family: Proxima-nova;
+    font-size: 60px;
+    font-weight: 100;
+}
+
+.first-screen__subtitle {
+    color: #f84545;
+    font-weight: bold;
+    font-size: 30px;
+}
+
+
+.first-screen__button img {
+    max-width: 50%;
+    margin: 0 auto;
 }
