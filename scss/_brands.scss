@@ -1,0 +1,49 @@
+.brands__body {
+    @include bodyWidth();
+    display: grid;
+    padding: 50px 0;
+    gap: 50px;
+    grid-template-columns: repeat(3, 1fr);
+    background-color: yellow;
+}
+
+.gourmet {
+    grid-row-start: span 2;
+    grid-column-start: span 2;
+    background-image: url(../img/gourmet-background.png);
+    background-position: center center;
+    background-size: cover;
+    padding: 30px 50px;
+
+    .brands__name {
+        font-size: 50px;
+        vertical-align: bottom;
+    }
+}
+
+.brands__brand {
+    padding: 20px 20px;
+}
+
+.carhartt {
+    background-image: url(../img/carhartt-background.png);
+    background-position: center center;
+    background-size: cover;
+}
+
+.brands__logo img {
+    max-width: 100%;
+}
+
+.brands__name {
+    font-size: 40px;
+    color: white;
+    font-weight: 300;
+}
+
+
+.brands__brand {
+    display: flex;
+    flex-direction: column;
+    justify-content: end;
+}
