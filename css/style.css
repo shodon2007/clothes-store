@@ -160,8 +160,7 @@ body {
 }
 
 .first-screen__button img:hover {
-  transform: scale(1.2);
-  filter: blur(2px);
+  transform: scale(1.1);
 }
 
 @media (max-width: 724px) {
@@ -311,7 +310,7 @@ body {
 }
 
 .header__logo img:hover {
-  filter: drop-shadow(10px 10px 10px #f84545);
+  filter: drop-shadow(0px 0px 20px #f84545);
   transform: scale(1.05);
 }
 
@@ -342,9 +341,10 @@ body {
   margin: 0 auto;
   display: grid;
   padding: 50px 0;
-  gap: 50px;
+  gap: 20px;
   grid-template-columns: repeat(3, 1fr);
-  background-color: yellow;
+  grid-template-rows: 1fr 1fr 1.5fr;
+  height: 1200px;
 }
 
 .gourmet {
@@ -361,6 +361,7 @@ body {
 }
 
 .brands__brand {
+  text-transform: uppercase;
   padding: 20px 20px;
 }
 
@@ -370,14 +371,44 @@ body {
   background-size: cover;
 }
 
+.adidas {
+  background-image: url(../img/adidas-background.png);
+  background-position: center center;
+  background-size: cover;
+}
+
+.deep {
+  background-image: url(../img/100deep-background.png);
+  background-position: center center;
+  background-size: cover;
+}
+
+.palace {
+  background-image: url(../img/palace-background.png);
+  background-position: center center;
+  background-size: cover;
+}
+
+.nike {
+  background-image: url(../img/nike-background.png);
+  background-position: center center;
+  background-size: cover;
+}
+
 .brands__logo img {
   max-width: 100%;
 }
 
 .brands__name {
-  font-size: 40px;
+  margin-top: 20px;
+  font-size: 30px;
   color: white;
-  font-weight: 300;
+  font-weight: 100;
+  letter-spacing: 20px;
+}
+
+.brands__brand:not(.gourmet) {
+  line-height: 1;
 }
 
 .brands__brand {

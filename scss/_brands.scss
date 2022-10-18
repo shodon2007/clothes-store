@@ -2,9 +2,10 @@
     @include bodyWidth();
     display: grid;
     padding: 50px 0;
-    gap: 50px;
+    gap: 20px;
     grid-template-columns: repeat(3, 1fr);
-    background-color: yellow;
+    grid-template-rows: 1fr 1fr 1.5fr;
+    height: 1200px;
 }
 
 .gourmet {
@@ -22,6 +23,7 @@
 }
 
 .brands__brand {
+    text-transform: uppercase;
     padding: 20px 20px;
 }
 
@@ -31,14 +33,44 @@
     background-size: cover;
 }
 
+.adidas {
+    background-image: url(../img/adidas-background.png);
+    background-position: center center;
+    background-size: cover;
+}
+
+.deep {
+    background-image: url(../img/100deep-background.png);
+    background-position: center center;
+    background-size: cover;
+}
+
+.palace {
+    background-image: url(../img/palace-background.png);
+    background-position: center center;
+    background-size: cover;
+}
+
+.nike {
+    background-image: url(../img/nike-background.png);
+    background-position: center center;
+    background-size: cover;
+}
+
 .brands__logo img {
     max-width: 100%;
 }
 
 .brands__name {
-    font-size: 40px;
+    margin-top: 20px;
+    font-size: 30px;
     color: white;
-    font-weight: 300;
+    font-weight: 100;
+    letter-spacing: 20px;
+}
+
+.brands__brand:not(.gourmet) {
+    line-height: 1;
 }
 
 
