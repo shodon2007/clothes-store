@@ -1,3 +1,5 @@
+//------------------------------------------
+
 .brands__body {
     @include bodyWidth();
     display: grid;
@@ -7,6 +9,8 @@
     grid-template-rows: 1fr 1fr 1.5fr;
     height: 1200px;
 }
+
+//------------------------------------------
 
 .gourmet {
     grid-row-start: span 2;
@@ -22,44 +26,24 @@
     }
 }
 
+//------------------------------------------
+
 .brands__brand {
+    display: flex;
+    flex-direction: column;
+    justify-content: end;
     text-transform: uppercase;
     padding: 20px 20px;
+    line-height: 1;
 }
 
-.carhartt {
-    background-image: url(../img/carhartt-background.png);
-    background-position: center center;
-    background-size: cover;
-}
-
-.adidas {
-    background-image: url(../img/adidas-background.png);
-    background-position: center center;
-    background-size: cover;
-}
-
-.deep {
-    background-image: url(../img/100deep-background.png);
-    background-position: center center;
-    background-size: cover;
-}
-
-.palace {
-    background-image: url(../img/palace-background.png);
-    background-position: center center;
-    background-size: cover;
-}
-
-.nike {
-    background-image: url(../img/nike-background.png);
-    background-position: center center;
-    background-size: cover;
-}
+//------------------------------------------
 
 .brands__logo img {
     max-width: 100%;
 }
+
+//------------------------------------------
 
 .brands__name {
     margin-top: 20px;
@@ -69,13 +53,44 @@
     letter-spacing: 20px;
 }
 
-.brands__brand:not(.gourmet) {
-    line-height: 1;
+//------------------------------------------
+
+.carhartt {
+    background-image: url(../img/carhartt-background.png);
+    background-position: center center;
+    background-size: cover;
 }
 
+//------------------------------------------
 
-.brands__brand {
-    display: flex;
-    flex-direction: column;
-    justify-content: end;
+.adidas {
+    background-image: url(../img/adidas-background.png);
+    background-position: center center;
+    background-size: cover;
 }
+
+//------------------------------------------
+
+.deep {
+    background-image: url(../img/100deep-background.png);
+    background-position: center center;
+    background-size: cover;
+}
+
+//------------------------------------------
+
+.palace {
+    background-image: url(../img/palace-background.png);
+    background-position: center center;
+    background-size: cover;
+}
+
+//------------------------------------------
+
+.nike {
+    background-image: url(../img/nike-background.png);
+    background-position: center center;
+    background-size: cover;
+}
+
+//------------------------------------------

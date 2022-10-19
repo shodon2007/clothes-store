@@ -361,8 +361,24 @@ body {
 }
 
 .brands__brand {
+  display: flex;
+  flex-direction: column;
+  justify-content: end;
   text-transform: uppercase;
   padding: 20px 20px;
+  line-height: 1;
+}
+
+.brands__logo img {
+  max-width: 100%;
+}
+
+.brands__name {
+  margin-top: 20px;
+  font-size: 30px;
+  color: white;
+  font-weight: 100;
+  letter-spacing: 20px;
 }
 
 .carhartt {
@@ -393,26 +409,4 @@ body {
   background-image: url(../img/nike-background.png);
   background-position: center center;
   background-size: cover;
-}
-
-.brands__logo img {
-  max-width: 100%;
-}
-
-.brands__name {
-  margin-top: 20px;
-  font-size: 30px;
-  color: white;
-  font-weight: 100;
-  letter-spacing: 20px;
-}
-
-.brands__brand:not(.gourmet) {
-  line-height: 1;
-}
-
-.brands__brand {
-  display: flex;
-  flex-direction: column;
-  justify-content: end;
 }
