@@ -337,13 +337,14 @@ body {
   }
 }
 .brands__body {
+  min-height: 100vh;
   width: 1200px;
   margin: 0 auto;
   display: grid;
   padding: 50px 0;
   gap: 20px;
-  grid-template-columns: repeat(3, 1fr);
-  grid-template-rows: 1fr 1fr 1.5fr;
+  grid-template-columns: repeat(3, minmax(100px, 1fr));
+  grid-template-rows: 1fr 1fr 2fr;
 }
 
 .gourmet {
@@ -367,6 +368,7 @@ body {
   justify-content: end;
   text-transform: uppercase;
   padding: 20px 20px;
+  padding-top: 50px;
   line-height: 1;
 }
 
@@ -417,6 +419,60 @@ body {
     width: 100vw;
     padding: 10px;
     width: 100%;
-    grid-template-columns: repeat(2, 1fr);
+    grid-template-columns: repeat(2, minmax(100px, 1fr));
+    grid-template-rows: 1fr 1fr 1fr 1fr 1fr;
+    gap: 10px;
+  }
+  .brands__brand {
+    padding: 10px;
+    padding-top: 100px;
+  }
+}
+@media (max-width: 724px) {
+  .brands__brand {
+    padding: 10px;
+    padding-top: 50px;
+  }
+  .gourmet .brands__name {
+    font-size: 20px;
+  }
+  .brands__name {
+    font-size: 15px;
+    letter-spacing: 5px;
+  }
+  .brands__logo {
+    width: 40%;
+  }
+  .palace {
+    order: 3;
+    grid-row-start: span 2;
+  }
+  .adidas {
+    order: 5;
+  }
+  .adidas .brands__logo {
+    width: 20%;
+  }
+  .adidas .brands__name {
+    margin: 0;
+    margin-top: 5px;
+  }
+  .nike {
+    order: 4;
+    grid-row-start: span 2;
+  }
+  .deep {
+    order: 2;
+    grid-row-start: span 2;
+  }
+  .carhartt {
+    order: 1;
+  }
+  .carhartt .brands__logo {
+    width: 20%;
+  }
+  .carhartt .brands__name {
+    margin: 0;
+    margin-top: 5px;
   }
 }
