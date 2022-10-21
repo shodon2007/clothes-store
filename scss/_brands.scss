@@ -103,7 +103,7 @@
         @include mobileWidth();
         width: 100%;
         grid-template-columns: repeat(2, minmax(100px, 1fr));
-        grid-template-rows: 1fr 1fr 1fr 1fr 1fr;
+        grid-template-rows: repeat(auto-fit, 1fr);
         gap: 10px;
     }
 
