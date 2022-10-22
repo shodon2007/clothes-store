@@ -1,7 +1,6 @@
 //------------------------------------------
 
 .brands__body {
-    min-height: 100vh;
     @include bodyWidth();
     display: grid;
     padding: 50px 0;
@@ -102,8 +101,6 @@
     .brands__body {
         @include mobileWidth();
         width: 100%;
-        grid-template-columns: repeat(2, minmax(100px, 1fr));
-        grid-template-rows: repeat(auto-fit, 1fr);
         gap: 10px;
     }
 
@@ -112,11 +109,20 @@
         padding-top: 100px;
     }
 
+    .brands__name {
+        font-size: 15px;
+    }
+
 }
 
 //------------------------------------------
 
 @media (max-width: 724px) {
+    .brands__body {
+        grid-template-columns: repeat(2, minmax(100px, 1fr));
+        grid-template-rows: repeat(auto-fit, minmax(100px, 1fr));
+    }
+
     .brands__brand {
         padding: 10px;
         padding-top: 50px;
