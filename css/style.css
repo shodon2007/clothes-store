@@ -545,3 +545,36 @@ body {
     font-size: 20px;
   }
 }
+.footer__body {
+  width: 1200px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  padding: 70px 0;
+}
+
+.footer__nav a {
+  margin: 0 20px;
+  font-weight: bold;
+  text-decoration: none;
+  color: black;
+  transition: all 0.3s ease;
+}
+
+.footer__nav a:hover {
+  color: #f84545;
+}
+
+.footer__social {
+  display: flex;
+  justify-content: space-between;
+}
+
+.footer__img {
+  display: flex;
+  margin: 0 10px;
+}
+
+.footer__img img {
+  max-width: 100%;
+}
