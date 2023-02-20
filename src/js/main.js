@@ -8,7 +8,7 @@ let isBurger = false;
 
 
 // burger
-const burgerClick = () => {
+window.burgerClick = () => {
     isBurger = isBurger != false ? burgerFalse() : burgerTrue();
     function burgerTrue() {
         body.style.overflow = "hidden";
@@ -27,7 +27,7 @@ const burgerClick = () => {
 
 
 // scroll
-function scrollDown() {
+window.scrollDown = () => {
     window.scrollBy({
         top: firstScreen.offsetHeight,
         left: 0,
